@@ -1,8 +1,13 @@
 var main = function() {
-	$('.day').click(function(){
-		$(this).next().toggle();
-		$(this).find("span.glyphicon-plus").toggleClass('glyphicon-minus');
-	});
-};
+  $('.login p').click(function(){
+	  $(".login .dropdown-menu").toggle();
+  });
+  
+  $("#accordion").accordion();  //create accordian
 
-$(document).ready(main);
+   $('.banner').unslider();  // add the unslider library
+};
+ 
+
+$(document).ready(main); 
+
